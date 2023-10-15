@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import dropBG from 'assets/bg__dropdown.png';
 
 export const Wrapper = styled.div`
   font-family: ${(props) => props.theme.fontFamily.primaryFont};
@@ -49,38 +48,43 @@ export const Wrapper = styled.div`
       display: flex;
       align-items: center;
       gap: 40px;
-      .nav-lists {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-        ${(props) => props.theme.mediaWidth.upToExtraSmall`
-         display: none;
-      `}
-        .nav-nav {
-          cursor: pointer;
-          font-family: ${(props) => props.theme.fontFamily.primaryFont};
-          font-style: normal;
-          font-weight: ${(props) => props.theme.fontWeight.fontRegular};
-          font-size: ${(props) => props.theme.fontSize.regular};
-          line-height: 160%;
-          /* identical to box height, or 26px */
+    }
+    .nav-lists {
+      display: flex;
+      align-items: center;
+      gap: 64px;
+      ${(props) => props.theme.mediaWidth.upToExtraSmall`
+       display: none;
+    `}
+      .nav-nav {
+        cursor: pointer;
+        font-family: ${(props) => props.theme.fontFamily.primaryFont};
+        font-style: normal;
+        font-weight: ${(props) => props.theme.fontWeight.fontRegular};
+        font-size: ${(props) => props.theme.fontSize.regular};
+        line-height: 160%;
 
-          color: ${(props) => props.theme.color2};
-          transition: all 0.3s;
-          // padding: 8px 22px;
-          // border-radius: 8px;
-          &.hide-mobile {
-            ${(props) => props.theme.mediaWidth.upToMedium`
-        display: none;
-        
-      `}
-          }
-          &:hover {
-          }
-          &:active {
-            transform: scale(0.85);
-            opacity: 0.5;
-          }
+        color: ${(props) => props.theme.color2};
+        color: #212529;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 125% */
+
+        transition: all 0.3s;
+
+        &.hide-mobile {
+          ${(props) => props.theme.mediaWidth.upToMedium`
+      display: none;
+      
+    `}
+        }
+        &:hover {
+        }
+        &:active {
+          transform: scale(0.85);
+          opacity: 0.5;
         }
       }
     }
@@ -143,7 +147,6 @@ export const Wrapper = styled.div`
         left: 50%;
         bottom: 0;
         transform: translateY(100%) translateX(-50%);
-        background: url(${dropBG});
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 100%;

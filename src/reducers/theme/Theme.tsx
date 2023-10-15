@@ -332,6 +332,7 @@ html.has-scroll-smooth {
         // background-color: #0f0e0e;
         // background-image: url(./bg.svg);
         width: 100vw;
+        padding: 0px 22px;
     }
 
     .center {

@@ -14,7 +14,7 @@ import {
   LoadingProvider,
   WalletProviders,
 } from 'providers';
-// import Header from 'components/Header/Header';
+import Header from 'components/Header/Header';
 // import Connect from 'components/Connect/Connect';
 // import ConnectForm from 'components/ConnectForm/ConnectForm';
 // import Footer from 'components/Footer/Footer';
@@ -52,7 +52,7 @@ export const App = () => {
                         <LoadingProvider>
                           {/* <Connect /> */}
                           {/* <ConnectForm /> */}
-                          {/* <Header /> */}
+                          <Header />
                           <MainRoute />
                           <ToastContainer
                             position="bottom-right"

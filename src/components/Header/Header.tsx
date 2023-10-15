@@ -52,38 +52,8 @@ export const HeaderComponent = ({
                 history.push('/');
               }}
             >
-              <img
-                src={require('assets/logo/horizontallogo.png').default}
-                alt=""
-              />
+              <img src={require('assets/logo.png').default} alt="" />
             </div>
-            {/* <div className="nav-lists">
-              <div
-                className="nav-nav"
-                onClick={() => {
-                  history.push('/');
-                }}
-              >
-                Home
-              </div>
-              <div
-                className="nav-nav"
-                onClick={() => {
-                  history.push('/swap');
-                }}
-              >
-                Swap
-              </div>
-
-              <div
-                className="nav-nav"
-                onClick={() => {
-                  history.push('/liquidity');
-                }}
-              >
-                Liquidity
-              </div>
-            </div> */}
           </div>
           <div
             className="menu"
@@ -93,6 +63,33 @@ export const HeaderComponent = ({
           >
             <span>Menu</span>
             <MenuIcon />
+          </div>
+          <div className="nav-lists">
+            <div
+              className="nav-nav"
+              onClick={() => {
+                history.push('/');
+              }}
+            >
+              Why us
+            </div>
+            <div
+              className="nav-nav"
+              onClick={() => {
+                // history.push('/swap');
+              }}
+            >
+              Exhibitions
+            </div>
+
+            <div
+              className="nav-nav"
+              onClick={() => {
+                // history.push('/liquidity');
+              }}
+            >
+              Collections
+            </div>
           </div>
           {!account ? (
             <div
