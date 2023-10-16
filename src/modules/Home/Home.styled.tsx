@@ -35,7 +35,6 @@ export const Wrapper = styled.div`
       .title {
         color: #fff;
 
-        font-family: Playfair Display;
         font-size: 80px;
         font-style: normal;
         font-weight: 400;
@@ -475,6 +474,7 @@ export const Wrapper = styled.div`
       flex-direction: column;
       align-items: flex-start;
       gap: 12px;
+      max-width: 1320px;
       .faq {
         display: flex;
         padding: 48px;

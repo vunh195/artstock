@@ -17,10 +17,10 @@ import {
 import Header from 'components/Header/Header';
 // import Connect from 'components/Connect/Connect';
 // import ConnectForm from 'components/ConnectForm/ConnectForm';
-// import Footer from 'components/Footer/Footer';
 import { ThirdwebProvider } from '@thirdweb-dev/react';
 import { SUPPORTED_NETWORKS } from 'configs/Connect/Configs.networks';
 import { Client, Provider, cacheExchange, fetchExchange } from 'urql';
+import Footer from 'components/Footer/Footer';
 
 const client = new Client({
   url: 'https://api.studio.thegraph.com/query/49354/zera-amm-testnet/v0.0.2',
@@ -63,7 +63,7 @@ export const App = () => {
                             pauseOnFocusLoss
                             pauseOnHover
                           />
-                          {/* <Footer /> */}
+                          <Footer />
                         </LoadingProvider>
                       </Router>
                     </AccessTokenProvider>

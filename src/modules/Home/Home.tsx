@@ -1,18 +1,18 @@
 import React from 'react';
 import { Wrapper } from './Home.styled';
 import withConnect from 'hoc/withWallet';
-import withLocomotive from 'hoc/withLocomotiveScroll';
+// import withLocomotive from 'hoc/withLocomotiveScroll';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import AddIcon from '@mui/icons-material/Add';
 import CloseIcon from '@mui/icons-material/Close';
 import { FAQS, QUESTIONS } from './Home.hard';
-const HomePage = ({ containerRef }: any) => {
+const HomePage = () => {
   const [activeQ, setActiveQ] = React.useState(0);
   const [activeFAQ, setActiveFAQ] = React.useState(0);
   return (
-    <Wrapper ref={containerRef} data-scroll-container>
+    <Wrapper>
       <div className="section1">
         <div className="bg"></div>
         <div className="left">
@@ -205,4 +205,4 @@ const HomePage = ({ containerRef }: any) => {
   );
 };
 
-export default withConnect(withLocomotive(HomePage));
+export default withConnect(HomePage);
